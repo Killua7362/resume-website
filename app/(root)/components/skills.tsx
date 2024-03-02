@@ -2,13 +2,13 @@ import Image from 'next/image';
 import {skills} from '../../constants'
 
 const Skills = () => {
-    return (<div className='pt-4'>
+    return (<div>
             <div className="text-xl pt-1 h-5 border-b-[1px] border-bblue/70 mb-2 text-background/70">  
                 <span className="bg-foreground pl-8 pr-4 uppercase font-semibold">
                     Skills
                 </span>
             </div>
-            <div className='p-10 pt-3 flex flex-col gap-y-2'>
+            <div className='p-6 lg:p-10 pt-3 flex flex-col gap-y-2'>
                 {
                     skills.map((ele,idx)=>{
                         return(

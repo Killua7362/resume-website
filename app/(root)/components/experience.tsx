@@ -20,9 +20,10 @@ const Experience = () => {
                                         <Image unoptimized
                                          alt={ele.company_name}
                                          src={ele.img_src}
-                                         height="50"
-                                         width="50"
-                                         className={`bg-white shadow-md border-[${ele.company_color}] border-[2px]`} 
+                                         height="0"
+                                         width="0"
+                                         sizes='0'
+                                         className={`bg-white shadow-md border-[${ele.company_color}] border-[2px] w-auto h-auto max-w-[50px] max-h-[50px]`} 
                                          style={{borderRadius:'50%',overflow:'hidden'}}
                                         />
                                         <div className="flex w-full justify-between items-start">
