@@ -6,13 +6,16 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist:["border-[#0275D8]","border-[#00C435]","text-[#C10528]","text-[#20A7D8]"],
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors:{
+        'background':'#191717',
+        'foreground':'#F1EFEF',
+        'bblue':'#0B60B0'
+      }
     },
   },
   plugins: [],
