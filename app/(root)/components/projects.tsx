@@ -9,7 +9,9 @@ const Projects = () => {
     const [projectType,setProjectType] = useState({type:"Machine Learning"});
     const [isRendered,setIsRendered] = useState(false);
     useEffect(()=>{
-        let data = JSON.parse(localStorage.getItem('projectType') || "")
+        let data = JSON.parse(localStorage.getItem('projectType') || JSON.stringify(
+            {type:"Machine Learning"}
+        ))
         if(data){
             setProjectType(data)
         }
