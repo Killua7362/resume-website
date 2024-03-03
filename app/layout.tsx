@@ -9,7 +9,7 @@ export default function RootLayout({
     <html lang="en" className="bg-background">
       <body>
         <head>
-          <title>Killua's Resume</title>
+          <title>Killua&apos;s Resume</title>
           <link rel="icon" href="/website-icon.png" sizes="any" />
         </head>
         <main
