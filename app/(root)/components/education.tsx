@@ -14,7 +14,7 @@ const Education = () => {
                 <div className="flex p-4 gap-x-4">
                     <Image unoptimized alt='NITK' src='/icons/nitk.png' width={0} height={0} className="border-[2px] border-black rounded-full w-auto h-auto max-w-[50px] max-h-[50px]"/>
                     <div>
-                        <a className="text-xl font-semibold flex items-center gap-x-2 cursor-pointer" href="https://www.nitk.ac.in/" target="_blank" tabIndex={-1}>
+                        <a className="text-xl font-semibold flex items-center gap-x-2 cursor-pointer text-background/80 hover:text-background/60" href="https://www.nitk.ac.in/" target="_blank" tabIndex={-1}>
                             National Institute of Technology, Karnataka
                             <FcLink/>
                         </a>
@@ -33,7 +33,7 @@ const Education = () => {
                 <div className="flex p-4 lg:p-2 w-fit flex-col">
                     <span className="uppercase font-semibold flex gap-x-2 pb-2 items-center">
                         <Image unoptimized src={"icons/mcn.png"} alt="" width={0} height={0} className="w-auto h-auto max-w-[20px] max-h-[20px]"/> 
-                            <a  href="https://www.millenniumfellows.org/fellowship" tabIndex={-1} target="_blank" className="flex items-center gap-x-1 ">
+                            <a  href="https://www.millenniumfellows.org/fellowship" tabIndex={-1} target="_blank" className="flex items-center gap-x-1 text-background/80 hover:text-background/60">
                                 Millenium Fellowship
                                 <FcLink/>
                             </a>

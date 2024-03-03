@@ -31,7 +31,7 @@ const Experience = () => {
                                                 <div>
                                                     {ele.title}
                                                 </div>
-                                                <a className="text-xs text-background/70 font-semibold flex items-center gap-x-2" tabIndex={-1} target='_blank' href={ele.company_site}>
+                                                <a className="text-xs text-background/80 hover:text-background/60 font-semibold flex items-center gap-x-2" tabIndex={-1} target='_blank' href={ele.company_site}>
                                                     {ele.company_name}
                                                     <FcLink/>
                                                 </a>

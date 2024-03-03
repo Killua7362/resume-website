@@ -9,7 +9,7 @@ const About = () => {
                     Web Developer / Machine Learning Engineer
                 </div>
             </div>
-            <a className=" cursor-pointer text-background" target="_blank" tabIndex={-1} href="https://github.com/Killua7362/resume-website">
+            <a className=" cursor-pointer text-background/80 hover:text-background/60" target="_blank" tabIndex={-1} href="https://github.com/Killua7362/resume-website">
                 Code
             </a>
         </div>

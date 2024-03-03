@@ -31,7 +31,7 @@ const Projects = () => {
             </div>
                 <div className="w-fit h-10 flex items-center justify-start px-4 pt-2 mt-3 text-xs text-foreground gap-x-2">
                     <div
-                     className={`p-2 rounded-lg cursor-pointer ${projectType.type === "Full Stack"?"bg-[#20A7D8] border-[1.9px] border-bblue":"bg-[#20A7D8]/80"}`}
+                     className={`p-2 rounded-lg cursor-pointer ${projectType.type === "Full Stack"?"bg-[#20A7D8] border-[1.9px] border-bblue":"bg-[#20A7D8]/80 hover:bg-[#73ccec]"}`}
                      onClick={()=>{
                         setProjectType({type:"Full Stack"})
                      }}
@@ -39,10 +39,10 @@ const Projects = () => {
                         Full Stack
                     </div>
                 <a href={`${projectType.type === 'Machine Learning'?"/resume/ML/AkshayBhat_resume.pdf":"/resume/FullStack/AkshayBhat_resume.pdf"}`}  target="_blank" tabIndex={-1}>
-                    <LiaFileDownloadSolid target="_blank" className={`text-3xl cursor-pointer text-[${projectType.type === 'Full Stack'?"#20A7D8":"#C10528"}]`}/>
+                    <LiaFileDownloadSolid target="_blank" className={`text-3xl cursor-pointer ${projectType.type === 'Full Stack'?"text-[#20A7D8] hover:text-[#73ccec]":"text-[#C10528] hover:text-[#ed6b83]"}`}/>
                 </a>
                     <div
-                     className={`p-2 rounded-lg cursor-pointer ${projectType.type === "Machine Learning"?"bg-[#C10528] border-[1.9px] border-bblue":"bg-[#C10528]/80"}`}
+                     className={`p-2 rounded-lg cursor-pointer  ${projectType.type === "Machine Learning"?"bg-[#C10528] border-[1.9px] border-bblue":"bg-[#C10528]/80 hover:bg-[#ed6b83]"}`}
                      onClick={()=>{
                         setProjectType({type:"Machine Learning"})
                      }}
@@ -62,7 +62,7 @@ const Projects = () => {
                                     {ele.techstack}
                                 </div>
                             </div>
-                            <a className="text-sm ml-4 mb-1 mt-1 text-background/70 w-fit flex gap-x-1 items-center" target="_blank" tabIndex={-1} href={ele.github_link}>
+                            <a className="text-sm ml-4 mb-1 mt-1 text-background/70 hover:text-background/50 w-fit flex gap-x-1 items-center" target="_blank" tabIndex={-1} href={ele.github_link}>
                                 <FaGithub className="text-lg text-background"/>
                                 Github
                             </a>
